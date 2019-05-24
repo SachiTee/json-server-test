@@ -1,0 +1,23 @@
+get a single node:
+http://localhost:3000/companies/1
+
+get all users of a company:
+http://localhost:3000/companies/1/users
+
+filter companies by name:
+http://localhost:3000/companies?name=Microsoft
+http://localhost:3000/companies?name=Microsoft&name=Apple
+
+pagination and limits:
+http://localhost:3000/companies?_page=1&_limit=2
+
+sorting:
+http://localhost:3000/companies?_sort=name&_order=asc
+
+users age range: 
+http://localhost:3000/users?age_gte=30
+http://localhost:3000/users?age_gte=30&age_lte=40
+
+full text search:
+http://localhost:3000/users?=Paul
+
